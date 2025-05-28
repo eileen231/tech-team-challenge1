@@ -9,6 +9,10 @@ function App() {
         <h1 className='title'>Welcome to F!rosh 2T5!</h1>
       </div>
 
+      <div className='learn-about'>
+        <h1 className='title'>Learn About the Orientation Committee!</h1>
+      </div>
+
       <div className="info">
         <div className="section">
           <h1 className='position'>Co-Orientation Chairs</h1>
@@ -52,7 +56,7 @@ function App() {
       </div>
 
       <footer>
-        <h3>Find us here!</h3>
+        <h3 className='footer-title'>Find us here!</h3>
         <ul>
           <li><a href="https://discord.gg/hJT44RcK" target = "_blank">Discord</a></li>
           <li><a href = "https://www.instagram.com/froshweek/" target = "_blank">Instagram</a></li>

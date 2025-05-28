@@ -3,14 +3,13 @@
 * {
     margin:0;
     padding:0;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=128521);
 }
 
 .App {
-    background-color:#7a379a; /*6e1b95*/
+    /*background-color:#7a379a; *//*6e1b95, Current: 7a379a*/
+    background: linear-gradient(#a56ac0, #7a379a);
     font-family: 'Sour Gummy', 'Copperplate Gothic Light', sans-serif ;
     box-sizing:border-box;
-
 }
 
 @keyframes sticky-parallax {
@@ -27,6 +26,20 @@
         z-index: 1000; /*ensure that header is always above everything else!!*/
 	}
 }
+
+@keyframes parallax {
+	from {
+		height: 200vh;
+		font-size: calc(3vw);
+        padding-top: 120px;
+        padding-bottom: 50px;
+	}
+	to {
+		background-color:#590790;
+		height: 0vh
+	}
+}
+
 .header {
     position: fixed;
 	top: 0;
@@ -39,25 +52,29 @@
 	animation-range: 0vh 90vh;
 }
 
-.info {
-    padding-top:100vh;
+.learn-about {
+    font-size: 35px;
+    padding: 150vh 150px 0 150px;
 }
+
+.info {
+    padding-top:0.5vh;
+    margin-top: 10%;
+}
+
 .title {
     text-align: center;
     color: rgb(255, 249, 238);
     padding-bottom: 50px;
 }
 
-.info {
-    margin-top: 10%;
-}
-
 .position {
     color:rgb(234, 233, 237);
     text-align: center;
-    background-color: #590790;
+    background-color: #5c1889;
     margin: 0 auto 1.2em auto;
-    width: 40%;
+    width: 35%;
+    border-radius: 100px;
 }
 
 .members{
@@ -78,9 +95,9 @@
     width:300px;
     height:350px;
     margin-bottom: 80px;
-    padding:20px;
+    padding:12px 20px 8px 20px;
     
-    border-radius: 30px;
+    border-radius: 20px;
     perspective: 1000px; /*for 3d effect*/
 }
 
@@ -91,12 +108,13 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 20px;
 }
 
 .memberCard:hover .memberCard-inner {
     cursor:pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transform:rotateY(180deg) scale(1.1) ;
+    transform:rotateY(180deg) scale(1.15);
 }
 
 .memberCard-front {
@@ -113,7 +131,7 @@
     background-color: #a068c6;
     color:rgb(234, 233, 237);
     
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     
     width: 100%;
@@ -127,11 +145,11 @@
 
 .memberPhoto {
     height: 300px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 footer {
-    background-color: #461766;
+    background-color: #511579;
     color:antiquewhite;
     text-align: center;
     font-size:22px;
@@ -139,16 +157,20 @@ footer {
     padding-bottom:20px;
 }
 
+.footer-title {
+    padding-bottom: 0.8em;
+}
+
 li {
     display: inline;
     font-size:20px;
     padding:0 5%;
+    margin-top: 40px;
 }
 
 a:link {
     color: rgb(114, 193, 224);
     text-decoration: none;
-    cursor: auto;
 }
 
 a:hover{
