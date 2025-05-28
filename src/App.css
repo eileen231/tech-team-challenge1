@@ -9,17 +9,45 @@
     background-color:#6e1b95;
     font-family: 'Sour Gummy', 'Copperplate Gothic Light', sans-serif ;
     box-sizing:border-box;
+
 }
 
+@keyframes sticky-parallax {
+	from {
+		height: 100vh;
+		font-size: calc(4.2vw + 1.5em);
+        padding-top: 120px;
+        padding-bottom: 50px;
+	}
+	to {
+		background-color:#590790;
+		height: 10vh;
+		font-size: 1.5em;
+	}
+}
 .header {
-    background-color: ;
+    position: fixed;
+	top: 0;
+    width: 100%;
+
+    background-color:#a068c6;
+
+    animation: sticky-parallax linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
 }
 
+.info {
+    padding-top:100vh;
+}
 .title {
     text-align: center;
     color: rgb(255, 249, 238);
-    font-size: 120px;
     padding-bottom: 50px;
+}
+
+.info {
+    margin-top: 10%;
 }
 
 .position {
@@ -46,9 +74,40 @@
 .memberCard:hover{
     cursor:pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.02);
 }
 
 .memberPhoto {
     height: 300px;
     border-radius: 15px;
+}
+
+footer {
+    background-color: #461766;
+    color:antiquewhite;
+    text-align: center;
+    font-size:22px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+li {
+    display: inline;
+    font-size:20px;
+    padding:0 5%;
+}
+
+a:link {
+    color: rgb(114, 193, 224);
+    text-decoration: none;
+    cursor: auto;
+}
+
+a:hover{
+    background-color: rgba(157, 126, 182,0.3);
+    cursor:pointer;
+}
+  
+a:link:active, a:visited:active, a:visited {
+    color: rgb(209, 114, 224);
 }

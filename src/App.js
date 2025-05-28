@@ -8,20 +8,31 @@ function App() {
       <div className='header'>
         <h1 className='title'>Welcome to F!rosh 2T5!</h1>
       </div>
-      
-      <div className="section">
-        <h1 className='position'>Co-Orientation Chairs</h1>
-        <div className='members'>
-          {data.filter(member => member.position === "Co-Orientation Chair").map((member) => (<div key={member.name} className='memberCard'><h2 className='memberName'>{member.name}</h2><img src={member.picture} alt={member.name} className='memberPhoto'></img></div>))}
+
+      <div className="info">
+        <div className="section">
+          <h1 className='position'>Co-Orientation Chairs</h1>
+          <div className='members'>
+            {data.filter(member => member.position === "Co-Orientation Chair").map((member) => (<div key={member.name} className='memberCard'><h2 className='memberName'>{member.name}</h2><img src={member.picture} alt={member.name} className='memberPhoto'></img></div>))}
+          </div>
+        </div>
+
+        <div className="section">
+          <h1 className='position'>VCs</h1>
+          <div className='members'>
+            {data.filter(member => member.position.includes("VC")).map((member) => (<div key={member.name} className='memberCard'><h2 className='memberName'>{member.name}</h2><img src={member.picture} alt={member.name} className='memberPhoto'></img></div>))}
+          </div>
         </div>
       </div>
 
-      <div className="section">
-        <h1 className='position'>VCs</h1>
-        <div className='members'>
-          {data.filter(member => member.position.includes("VC")).map((member) => (<div key={member.name} className='memberCard'><h2 className='memberName'>{member.name}</h2><img src={member.picture} alt={member.name} className='memberPhoto'></img></div>))}
-        </div>
-      </div>
+      <footer>
+        <h3>Find us here!</h3>
+        <ul>
+          <li><a href="https://discord.gg/hJT44RcK" target = "_blank">Discord</a></li>
+          <li><a href = "https://www.instagram.com/froshweek/" target = "_blank">Instagram</a></li>
+          <li><a href = "https://linktr.ee/froshweek" target = "_blank">Linktree</a></li>
+        </ul>
+      </footer>
 
     </div>
   );
