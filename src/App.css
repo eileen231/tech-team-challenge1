@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.App {
+    background-color:#6e1b95;
+    font-family: 'Sour Gummy', 'Copperplate Gothic Light', sans-serif ;
+    box-sizing:border-box;
+}
+
+.header {
+    background-color: ;
+}
+
+.title {
+    text-align: center;
+    color: rgb(255, 249, 238);
+    font-size: 120px;
+    padding-bottom: 50px;
+}
+
+.position {
+    color:rgb(234, 233, 237);
+    text-align: center;
+}
+
+.members{
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.memberCard{
+    background-color: #c1a5d2;
+    transition: 0.1s;
+    padding:20px;
+    border-radius: 30px;
+}
+
+.memberCard:hover{
+    cursor:pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.memberPhoto {
+    height: 300px;
+    border-radius: 15px;
+}
