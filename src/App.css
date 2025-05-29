@@ -10,6 +10,7 @@
     background: linear-gradient(#a56ac0, #7a379a);
     font-family: 'Sour Gummy', 'Copperplate Gothic Light', sans-serif ;
     box-sizing:border-box;
+    cursor: url('/public/cursors.cur');/*https://sweezy-cursors.com/cursor/plain-purple/*/
 }
 
 @keyframes sticky-parallax {
@@ -24,19 +25,6 @@
 		height: 10vh;
 		font-size: 1.5em;
         z-index: 1000; /*ensure that header is always above everything else!!*/
-	}
-}
-
-@keyframes parallax {
-	from {
-		height: 200vh;
-		font-size: calc(3vw);
-        padding-top: 120px;
-        padding-bottom: 50px;
-	}
-	to {
-		background-color:#590790;
-		height: 0vh
 	}
 }
 
@@ -180,4 +168,45 @@ a:hover{
   
 a:link:active, a:visited:active, a:visited {
     color: rgb(209, 114, 224);
+}
+
+#btn-confetti {
+    background-color:#f4cd31;
+    color:#590790;
+    font-family: 'Sour Gummy','Courier New', Courier, monospace;
+    font-weight: 1000;
+    border-radius: 50%;
+    border-color: #ec80ff;
+    border-width: 1px;
+    width:5rem;
+    height:5rem;
+    padding: 15px;
+    display: block;
+    margin: 0 auto 30px auto;
+    position: fixed;
+    top:83%;
+    right:3%;
+    z-index: 999;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+@keyframes bounce{
+    0% { 
+        transform: translate3d(0, 0, 0);
+    }
+    60% { 
+        transform: scale(1.2) translate3d(0, -100px, 0);
+    }
+    100% { 
+        transform: translate3d(0, 0, 0);
+    }
+}
+#btn-confetti:hover {
+    background-color:#f4a331;
+    cursor: pointer;
+    border-color: #511579;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    animation: bounce 1s cubic-bezier(0.5, 0.05, 1, 0.5); 
+    animation-iteration-count: infinite;
 }
