@@ -34,6 +34,10 @@
     width: 100%;
 
     background-color:#a068c6;
+    background-image: url('/public/frosh.webp');
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: 20% 100%;
 
     animation: sticky-parallax linear forwards;
 	animation-timeline: scroll();
@@ -41,8 +45,9 @@
 }
 
 .learn-about {
-    font-size: 35px;
-    padding: 150vh 150px 0 150px;
+    /* font-size: 35px; */
+    font-size: 2.3vw;
+    padding: 150vh 150px 0 150px; 
 }
 
 .info {
