@@ -13,6 +13,12 @@
     cursor: url('/public/cursors.cur');/*https://sweezy-cursors.com/cursor/plain-purple/*/
 }
 
+@media screen and (max-width: 800px) {
+  h1.title {
+    font-size: 1.5em;
+  }
+}
+
 @keyframes sticky-parallax {
 	from {
 		height: 100vh;
@@ -46,7 +52,7 @@
 
 .learn-about {
     /* font-size: 35px; */
-    font-size: 2.3vw;
+    font-size: 2.3em;
     padding: 150vh 150px 0 150px; 
 }
 
